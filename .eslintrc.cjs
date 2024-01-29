@@ -16,6 +16,15 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    "max-len": [
+      "error",
+      {
+        "code": 100,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true,
+        "ignoreRegExpLiterals": true
+      }
+    ],
     "semi": ["error", "never"],
     'react/prop-types': 'off',
     "no-unused-vars": "off",
@@ -26,7 +35,7 @@ module.exports = {
     "indent": ["warn", 4],
     "react/react-in-jsx-scope": "off",
     "no-multiple-empty-lines": ["error", { "max": 1 }],
-    "react-hooks/exhaustive-deps": "error",
+    "react-hooks/exhaustive-deps": "off",
     "object-curly-spacing": ["warn", "always"]
   },
 }
